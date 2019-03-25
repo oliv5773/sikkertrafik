@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Safety";
+    src: url("fonts/safety/SafetyMedium.otf");
+    src:
+        url("css/fonts/Harabara.otf") format("opentype")
+}
+
+
+
 html {
     text-rendering: optimizeLegibility;
     font-family: sans-serif;
@@ -137,7 +146,7 @@ iframe {
 
 .ribbon h2 {
     font-size: 42px;
-    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    font-family: Safety, Helvetica, Arial, sans-serif;
     font-weight: 100;
     margin-bottom: 15px;
 }
