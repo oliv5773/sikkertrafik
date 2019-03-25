@@ -160,3 +160,101 @@ iframe {
     min-height: 1px;
     padding: 0;
 }
+
+
+
+
+
+
+
+.piechart {
+    background: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+
+}
+
+.pie1 {
+    fill: none;
+    stroke: #123456;
+    stroke-width: 200;
+    stroke-dasharray: 600 632;
+    transition: all 1s ease;
+
+}
+
+.pie1:hover {
+    opacitY: 0.8;
+
+}
+
+.pie2:hover {
+    opacitY: 0.8;
+
+}
+
+.pie2 {
+    fill: none;
+    stroke: #106d42;
+    stroke-width: 200;
+    stroke-dasharray: 10 632;
+    stroke-dashoffset: -600;
+    transition: all 1s ease;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#datacontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#tekstboks1 {
+    border: 1px solid black;
+    margin-left: 2vw;
+    padding: 1vw;
+    top: -1vw;
+    max-width: 200px;
+    background-color: lightgray;
+}
+
+#tekstboks2 {
+    border: 1px solid black;
+    margin-left: 2vw;
+    padding: 1vw;
+    top: -1vw;
+    max-width: 200px;
+    background-color: lightgray;
+}
+
+.tekst1 {
+    transform: rotate(90deg);
+    animation-name: fadein;
+    animation-duration: 2s;
+
+}
+
+.tekst2 {
+    transform: rotate(90deg);
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
