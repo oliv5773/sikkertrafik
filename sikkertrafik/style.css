@@ -1,19 +1,14 @@
 @font-face {
     font-family: "Safety";
     src: url("fonts/safety/SafetyMedium.otf");
-    src:
-        url("css/fonts/Harabara.otf") format("opentype")
+    src: url("css/fonts/Harabara.otf") format("opentype")
 }
-
-
 
 html {
     text-rendering: optimizeLegibility;
     font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
     display: block;
 }
-
 
 ::selection {
     background: #3f0;
@@ -41,12 +36,10 @@ div {
     display: block;
 }
 
-/*
 img {
     border: 0;
     height: auto;
 }
-*/
 
 
 h2 {
@@ -67,8 +60,8 @@ iframe {
     position: relative;
 }
 
-ribbon-container2 {
-    margin: 0 0;
+.ribbon-container2 {
+    margin: 0;
 }
 
 .container-max {
@@ -103,6 +96,23 @@ ribbon-container2 {
     margin: 0 auto 15px;
 }
 
+a {
+    font-family: Safety, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #9ea1a5;
+    text-transform: uppercase;
+    transition: .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 .ribbon h2 {
     font-size: 42px;
     font-family: Safety, Helvetica, Arial, sans-serif;
@@ -114,11 +124,6 @@ ribbon-container2 {
     line-height: 1;
     margin-top: 0;
     display: inline-block;
-}
-
-.clearfix,
-.ribbon {
-    clear: both;
 }
 
 .col-md-6,
@@ -144,17 +149,16 @@ ribbon-container2 {
     stroke-width: 200;
     stroke-dasharray: 600 632;
     transition: all 1s ease;
-
 }
+
+.text-image__content {}
 
 .pie1:hover {
     opacity: 0.8;
-
 }
 
 .pie2:hover {
     opacity: 0.8;
-
 }
 
 .pie2 {
@@ -164,7 +168,6 @@ ribbon-container2 {
     stroke-dasharray: 10 632;
     stroke-dashoffset: -600;
     transition: all 1s ease;
-
 }
 
 .hidden {
@@ -202,13 +205,26 @@ ribbon-container2 {
     transform: rotate(90deg);
     animation-name: fadein;
     animation-duration: 2s;
-
 }
 
 .tekst2 {
     transform: rotate(90deg);
     animation-name: fadein;
     animation-duration: 2s;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 70px 0 20px;
+    background-color: #28292c;
+    color: #9ea1a5;
+    display: block;
 }
 
 
@@ -221,6 +237,7 @@ ribbon-container2 {
         opacity: 1;
     }
 }
+
 
 @media print,
 (min-width: 768px) .media-ribbon .image.left,
