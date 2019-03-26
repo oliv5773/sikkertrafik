@@ -1,14 +1,12 @@
 @font-face {
     font-family: "Safety";
     src: url("fonts/safety/SafetyMedium.otf");
-    src:
-        url("css/fonts/Harabara.otf") format("opentype")
+    src: url("css/fonts/Harabara.otf") format("opentype")
 }
 
 html {
     text-rendering: optimizeLegibility;
     font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
     display: block;
 }
 
@@ -62,13 +60,12 @@ iframe {
     position: relative;
 }
 
-ribbon-container2 {
-    margin: 0 0;
+.ribbon-container2 {
+    margin: 0;
 }
 
 .container-max {
     max-width: 1024px;
-    margin: 0 auto;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -127,11 +124,6 @@ a:hover {
     line-height: 1;
     margin-top: 0;
     display: inline-block;
-}
-
-.clearfix,
-.ribbon {
-    clear: both;
 }
 
 .col-md-6,
@@ -213,7 +205,6 @@ a:hover {
     transform: rotate(90deg);
     animation-name: fadein;
     animation-duration: 2s;
-
 }
 
 .tekst2 {
@@ -237,9 +228,6 @@ footer {
 }
 
 
-
-
-
 @keyframes fadein {
     from {
         opacity: 0;
@@ -249,6 +237,7 @@ footer {
         opacity: 1;
     }
 }
+
 
 @media print,
 (min-width: 768px) .media-ribbon .image.left,
