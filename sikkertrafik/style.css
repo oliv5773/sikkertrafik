@@ -33,27 +33,16 @@ main {
     overflow: hidden;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary,
+
 div {
     display: block;
 }
 
 img {
     border: 0;
-    max-width: 100%;
     height: auto;
 }
+
 
 h2 {
     display: inline-block;
@@ -71,6 +60,10 @@ iframe {
 
 .ribbon-container {
     position: relative;
+}
+
+ribbon-container2 {
+    margin: 0 0;
 }
 
 .container-max {
