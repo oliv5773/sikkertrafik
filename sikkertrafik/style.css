@@ -93,7 +93,7 @@ img {
 }
 
 h2 {
-    display: block;
+    display: inline-block;
     font-size: 1.5em;
     font-weight: 100;
 }
@@ -172,10 +172,6 @@ iframe {
 
 
 
-
-
-
-
 .piechart {
     background: #ddd;
     width: 200px;
@@ -195,12 +191,12 @@ iframe {
 }
 
 .pie1:hover {
-    opacitY: 0.8;
+    opacity: 0.8;
 
 }
 
 .pie2:hover {
-    opacitY: 0.8;
+    opacity: 0.8;
 
 }
 
@@ -257,6 +253,7 @@ iframe {
     animation-name: fadein;
     animation-duration: 2s;
 }
+
 
 @keyframes fadein {
     from {
