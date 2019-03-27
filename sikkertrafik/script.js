@@ -13,11 +13,11 @@ let myData;
 async function hentJson() {
     let myJson = await fetch("pie.json");
     myData = await myJson.json();
+    document.querySelector(".pie1").addEventListener("click", pie1show);
+    document.querySelector(".pie2").addEventListener("click", pie2show);
     //console.log(myData);
     lavArray();
 }
-document.querySelector(".pie1").addEventListener("click", pie1show);
-document.querySelector(".pie2").addEventListener("click", pie2show);
 
 function pie1show() {
     console.log("Vis text");
