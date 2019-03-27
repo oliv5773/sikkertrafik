@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    margin: 50px 0 0;
+    margin: 0 auto;
     color: #373d46;
     overflow-y: scroll;
     font-family: sans-serif;
@@ -28,12 +28,30 @@ body {
 }
 
 main {
+    padding-top: 4em;
     overflow: hidden;
 }
 
+.servicemenu li {
+    list-style-type: none;
+    text-align: right;
+}
+
+.servicemenu {
+    padding-bottom: 5em;
+    display: inline-block;
+    width: 48%;
+}
 
 div {
     display: block;
+}
+
+.img img {
+    width: 80%;
+    padding: 0 10%;
+    background-color: #030304;
+    cursor: pointer;
 }
 
 img {
@@ -97,6 +115,8 @@ iframe {
     margin: 0 auto 15px;
 }
 
+
+
 a {
     font-family: Safety, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -114,11 +134,30 @@ a:hover {
     color: white;
 }
 
+.kursiv {
+    font-style: italic;
+}
+
+
 .ribbon h2 {
     font-size: 42px;
     font-family: Safety, Helvetica, Arial, sans-serif;
     font-weight: 100;
     margin-bottom: 15px;
+}
+
+.text_right {
+    width: 46%;
+    padding-left: 1em;
+    display: none;
+}
+
+.img_left {
+    width: 46%;
+    vertical-align: top;
+    padding-right: 1em;
+    padding-top: 1.3em;
+    display: none;
 }
 
 .media-ribbon h2 {
@@ -222,10 +261,60 @@ a:hover {
 }
 
 footer {
-    padding: 70px 0 20px;
+    padding: 1px 0 1px;
     background-color: #28292c;
     color: #9ea1a5;
     display: block;
+}
+
+.contact-info {
+    display: inline-block;
+    width: 48%;
+}
+
+.home {
+    position: fixed;
+    width: 11%;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    z-index: 99;
+}
+
+nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #28292c;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #28292c;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #555;
+    color: white;
 }
 
 
@@ -244,6 +333,24 @@ footer {
 (min-width: 768px) .media-ribbon .image.left,
 .media-ribbon .video.left {
     float: left;
+}
+
+@media only screen and (min-width: 768px) {
+    .text_mobil {
+        display: none;
+    }
+
+    .img_mobil {
+        display: none;
+    }
+
+    .text_right {
+        display: inline-block;
+    }
+
+    .img_left {
+        display: inline-block;
+    }
 }
 
 @media print,
